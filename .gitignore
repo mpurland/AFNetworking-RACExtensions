@@ -16,3 +16,7 @@ profile
 *.moved-aside
 DerivedData
 .idea/
+*.swp
+Podfile.lock
+Pods/
+
