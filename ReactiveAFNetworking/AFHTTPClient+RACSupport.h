@@ -29,15 +29,15 @@ extern NSString * const RAFNetworkingOperationErrorKey;
  * [self.httpClient.networkReachabilityStatusSignal subscribeNext:^(NSNumber *status) {
  *     AFNetworkReachabilityStatus networkStatus = [status intValue];
  *     switch (networkStatus) {
- *		 	case AFNetworkReachabilityStatusUnknown:
- *      	case AFNetworkReachabilityStatusNotReachable:
- *      	     [self cancelTheShow];
- *				 break;
- *       	case AFNetworkReachabilityStatusReachableViaWWAN:
- *      	case AFNetworkReachabilityStatusReachableViaWiFi:
- *           	if (self.theShowMustGoOn)
- *               	[self letTheShowGoOn];
- *           	 break;
+ *          case AFNetworkReachabilityStatusUnknown:
+ *          case AFNetworkReachabilityStatusNotReachable:
+ *               [self cancelTheShow];
+ *               break;
+ *          case AFNetworkReachabilityStatusReachableViaWWAN:
+ *          case AFNetworkReachabilityStatusReachableViaWiFi:
+ *              if (self.theShowMustGoOn)
+ *                  [self letTheShowGoOn];
+ *               break;
  *      }
  * }];
  */
