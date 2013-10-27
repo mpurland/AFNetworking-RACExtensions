@@ -7,25 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37AC0443589F4B5088C5EE9E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B8D97D0BEB247D192E5E79A /* libPods.a */; };
+		228D5B73181C8B8E00AE13AB /* AFNetworkReachabilityManager+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 228D5B72181C8B8E00AE13AB /* AFNetworkReachabilityManager+RACSupport.m */; };
+		7E486D2579374DA68FFA696F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4630BBE009EA4F5A9B6FDEFE /* libPods.a */; };
 		846C56E01739CD20008B1704 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846C56DF1739CD20008B1704 /* SenTestingKit.framework */; };
-		846C56E21739CD20008B1704 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846C56E11739CD20008B1704 /* Cocoa.framework */; };
-		846C56EC1739CD20008B1704 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 846C56EA1739CD20008B1704 /* InfoPlist.strings */; };
-		846C57181739CD50008B1704 /* libExpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 846C56FE1739CD39008B1704 /* libExpecta.a */; };
-		846C571A1739CD50008B1704 /* libSpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 846C57191739CD50008B1704 /* libSpecta.a */; };
-		846C571B1739CD5B008B1704 /* AFHTTPClient+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EAA16D17056B4C00E98BFE /* AFHTTPClient+RACSupport.m */; };
-		846C571C1739CD5B008B1704 /* AFURLConnectionOperation+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EAA16F17056B4C00E98BFE /* AFURLConnectionOperation+RACSupport.m */; };
-		846C571F1739CDD0008B1704 /* RAFHTTPClientSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 846C571E1739CDD0008B1704 /* RAFHTTPClientSpec.m */; };
-		846C57201739D043008B1704 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EAA17717056B5A00E98BFE /* AFHTTPClient.m */; };
-		846C57211739D043008B1704 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EAA17917056B5A00E98BFE /* AFHTTPRequestOperation.m */; };
-		846C57221739D043008B1704 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EAA17B17056B5A00E98BFE /* AFImageRequestOperation.m */; };
-		846C57231739D043008B1704 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EAA17D17056B5A00E98BFE /* AFJSONRequestOperation.m */; };
-		846C57241739D043008B1704 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EAA17F17056B5A00E98BFE /* AFNetworkActivityIndicatorManager.m */; };
-		846C57251739D043008B1704 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EAA18217056B5A00E98BFE /* AFPropertyListRequestOperation.m */; };
-		846C57261739D043008B1704 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EAA18417056B5A00E98BFE /* AFURLConnectionOperation.m */; };
-		846C57271739D043008B1704 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EAA18617056B5A00E98BFE /* AFXMLRequestOperation.m */; };
-		846C57281739D043008B1704 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EAA18817056B5A00E98BFE /* UIImageView+AFNetworking.m */; };
-		847D6A131752D625004E09C2 /* AFHTTPClient+RAFMocking.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D6A111752D625004E09C2 /* AFHTTPClient+RAFMocking.m */; };
 		84EAA0B81704E1E700E98BFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EAA0B71704E1E700E98BFE /* UIKit.framework */; };
 		84EAA0BA1704E1E700E98BFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EAA0B91704E1E700E98BFE /* Foundation.framework */; };
 		84EAA0BC1704E1E700E98BFE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EAA0BB1704E1E700E98BFE /* CoreGraphics.framework */; };
@@ -38,102 +22,19 @@
 		84EAA11A17052E0900E98BFE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EAA11917052E0800E98BFE /* MobileCoreServices.framework */; };
 		84EAA16A17056B3D00E98BFE /* RAFNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EAA16717056B3D00E98BFE /* RAFNAppDelegate.m */; };
 		84EAA16B17056B3D00E98BFE /* RAFNMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EAA16917056B3D00E98BFE /* RAFNMainViewController.m */; };
-		84EAA17317056B4C00E98BFE /* AFHTTPClient+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EAA16D17056B4C00E98BFE /* AFHTTPClient+RACSupport.m */; };
-		84EAA17417056B4C00E98BFE /* AFURLConnectionOperation+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EAA16F17056B4C00E98BFE /* AFURLConnectionOperation+RACSupport.m */; };
 		84EAA17517056B4C00E98BFE /* RACSubscriber+AFProgressCallbacks.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EAA17217056B4C00E98BFE /* RACSubscriber+AFProgressCallbacks.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		846C56FD1739CD39008B1704 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 846C56F61739CD39008B1704 /* Expecta.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E9ACDF0C13B2DD520010F4D7;
-			remoteInfo = Expecta;
-		};
-		846C56FF1739CD39008B1704 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 846C56F61739CD39008B1704 /* Expecta.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E93067CE13B2E6D100EA26FF;
-			remoteInfo = "Expecta-iOS";
-		};
-		846C57011739CD39008B1704 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 846C56F61739CD39008B1704 /* Expecta.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E9ACDF1D13B2DD520010F4D7;
-			remoteInfo = ExpectaTests;
-		};
-		846C57031739CD39008B1704 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 846C56F61739CD39008B1704 /* Expecta.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E93067DA13B2E6D100EA26FF;
-			remoteInfo = "Expecta-iOSTests";
-		};
-		846C570C1739CD3D008B1704 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 846C57051739CD3D008B1704 /* Specta.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E9D96A2614B6B8AB007D9521;
-			remoteInfo = Specta;
-		};
-		846C570E1739CD3D008B1704 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 846C57051739CD3D008B1704 /* Specta.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E9B777A414BA294B00D8DC76;
-			remoteInfo = "Specta-iOS";
-		};
-		846C57101739CD3D008B1704 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 846C57051739CD3D008B1704 /* Specta.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E9D96A3A14B6B8AB007D9521;
-			remoteInfo = SpectaTests;
-		};
-		846C57121739CD3D008B1704 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 846C57051739CD3D008B1704 /* Specta.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E9B777B314BA294C00D8DC76;
-			remoteInfo = "Specta-iOSTests";
-		};
-		846C57141739CD46008B1704 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 846C57051739CD3D008B1704 /* Specta.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = E9D96A2514B6B8AB007D9521;
-			remoteInfo = Specta;
-		};
-		846C57161739CD46008B1704 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 846C56F61739CD39008B1704 /* Expecta.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = E9ACDF0B13B2DD520010F4D7;
-			remoteInfo = Expecta;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		1B8D97D0BEB247D192E5E79A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		228D5B71181C8B8E00AE13AB /* AFNetworkReachabilityManager+RACSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFNetworkReachabilityManager+RACSupport.h"; sourceTree = "<group>"; };
+		228D5B72181C8B8E00AE13AB /* AFNetworkReachabilityManager+RACSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFNetworkReachabilityManager+RACSupport.m"; sourceTree = "<group>"; };
+		4630BBE009EA4F5A9B6FDEFE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E1FD6724EAC45F6A4B0F196 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		846C56DE1739CD20008B1704 /* RAFNetworking Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RAFNetworking Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		846C56DF1739CD20008B1704 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		846C56E11739CD20008B1704 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		846C56E41739CD20008B1704 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		846C56E51739CD20008B1704 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		846C56E61739CD20008B1704 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		846C56E91739CD20008B1704 /* RAFNetworking Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RAFNetworking Tests-Info.plist"; sourceTree = "<group>"; };
-		846C56EB1739CD20008B1704 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		846C56F01739CD20008B1704 /* RAFNetworking Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RAFNetworking Tests-Prefix.pch"; sourceTree = "<group>"; };
-		846C56F61739CD39008B1704 /* Expecta.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Expecta.xcodeproj; path = External/Expecta/Expecta.xcodeproj; sourceTree = SOURCE_ROOT; };
-		846C57051739CD3D008B1704 /* Specta.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Specta.xcodeproj; path = External/Specta/Specta.xcodeproj; sourceTree = SOURCE_ROOT; };
-		846C57191739CD50008B1704 /* libSpecta.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSpecta.a; path = ../External/ReactiveCocoa/external/specta/build/Release/libSpecta.a; sourceTree = "<group>"; };
-		846C571E1739CDD0008B1704 /* RAFHTTPClientSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAFHTTPClientSpec.m; sourceTree = "<group>"; };
-		847D6A111752D625004E09C2 /* AFHTTPClient+RAFMocking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPClient+RAFMocking.m"; sourceTree = "<group>"; };
-		847D6A121752D625004E09C2 /* AFHTTPClient+RAFMocking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPClient+RAFMocking.h"; sourceTree = "<group>"; };
 		84EAA0B41704E1E700E98BFE /* Reactive AFNetworking Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reactive AFNetworking Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EAA0B71704E1E700E98BFE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		84EAA0B91704E1E700E98BFE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -151,32 +52,9 @@
 		84EAA16717056B3D00E98BFE /* RAFNAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAFNAppDelegate.m; path = "Reactive AFNetworking Example/RAFNAppDelegate.m"; sourceTree = SOURCE_ROOT; };
 		84EAA16817056B3D00E98BFE /* RAFNMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAFNMainViewController.h; path = "Reactive AFNetworking Example/RAFNMainViewController.h"; sourceTree = SOURCE_ROOT; };
 		84EAA16917056B3D00E98BFE /* RAFNMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAFNMainViewController.m; path = "Reactive AFNetworking Example/RAFNMainViewController.m"; sourceTree = SOURCE_ROOT; };
-		84EAA16C17056B4C00E98BFE /* AFHTTPClient+RACSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPClient+RACSupport.h"; sourceTree = "<group>"; };
-		84EAA16D17056B4C00E98BFE /* AFHTTPClient+RACSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPClient+RACSupport.m"; sourceTree = "<group>"; };
-		84EAA16E17056B4C00E98BFE /* AFURLConnectionOperation+RACSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFURLConnectionOperation+RACSupport.h"; sourceTree = "<group>"; };
-		84EAA16F17056B4C00E98BFE /* AFURLConnectionOperation+RACSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFURLConnectionOperation+RACSupport.m"; sourceTree = "<group>"; };
 		84EAA17017056B4C00E98BFE /* RACAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACAFNetworking.h; sourceTree = "<group>"; };
 		84EAA17117056B4C00E98BFE /* RACSubscriber+AFProgressCallbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSubscriber+AFProgressCallbacks.h"; sourceTree = "<group>"; };
 		84EAA17217056B4C00E98BFE /* RACSubscriber+AFProgressCallbacks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSubscriber+AFProgressCallbacks.m"; sourceTree = "<group>"; };
-		84EAA17617056B5A00E98BFE /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPClient.h; path = AFNetworking/AFHTTPClient.h; sourceTree = "<group>"; };
-		84EAA17717056B5A00E98BFE /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPClient.m; path = AFNetworking/AFHTTPClient.m; sourceTree = "<group>"; };
-		84EAA17817056B5A00E98BFE /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
-		84EAA17917056B5A00E98BFE /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
-		84EAA17A17056B5A00E98BFE /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFImageRequestOperation.h; path = AFNetworking/AFImageRequestOperation.h; sourceTree = "<group>"; };
-		84EAA17B17056B5A00E98BFE /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFImageRequestOperation.m; path = AFNetworking/AFImageRequestOperation.m; sourceTree = "<group>"; };
-		84EAA17C17056B5A00E98BFE /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFJSONRequestOperation.h; path = AFNetworking/AFJSONRequestOperation.h; sourceTree = "<group>"; };
-		84EAA17D17056B5A00E98BFE /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFJSONRequestOperation.m; path = AFNetworking/AFJSONRequestOperation.m; sourceTree = "<group>"; };
-		84EAA17E17056B5A00E98BFE /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = AFNetworking/AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
-		84EAA17F17056B5A00E98BFE /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = AFNetworking/AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
-		84EAA18017056B5A00E98BFE /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
-		84EAA18117056B5A00E98BFE /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFPropertyListRequestOperation.h; path = AFNetworking/AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
-		84EAA18217056B5A00E98BFE /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFPropertyListRequestOperation.m; path = AFNetworking/AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
-		84EAA18317056B5A00E98BFE /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
-		84EAA18417056B5A00E98BFE /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
-		84EAA18517056B5A00E98BFE /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFXMLRequestOperation.h; path = AFNetworking/AFXMLRequestOperation.h; sourceTree = "<group>"; };
-		84EAA18617056B5A00E98BFE /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFXMLRequestOperation.m; path = AFNetworking/AFXMLRequestOperation.m; sourceTree = "<group>"; };
-		84EAA18717056B5A00E98BFE /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
-		84EAA18817056B5A00E98BFE /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,10 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				846C571A1739CD50008B1704 /* libSpecta.a in Frameworks */,
-				846C57181739CD50008B1704 /* libExpecta.a in Frameworks */,
 				846C56E01739CD20008B1704 /* SenTestingKit.framework in Frameworks */,
-				846C56E21739CD20008B1704 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +75,7 @@
 				84EAA0B81704E1E700E98BFE /* UIKit.framework in Frameworks */,
 				84EAA0BA1704E1E700E98BFE /* Foundation.framework in Frameworks */,
 				84EAA0BC1704E1E700E98BFE /* CoreGraphics.framework in Frameworks */,
-				37AC0443589F4B5088C5EE9E /* libPods.a in Frameworks */,
+				7E486D2579374DA68FFA696F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,57 +92,10 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		846C56E71739CD20008B1704 /* RAFNetworking Tests */ = {
-			isa = PBXGroup;
-			children = (
-				846C571E1739CDD0008B1704 /* RAFHTTPClientSpec.m */,
-				847D6A111752D625004E09C2 /* AFHTTPClient+RAFMocking.m */,
-				847D6A121752D625004E09C2 /* AFHTTPClient+RAFMocking.h */,
-				846C56E81739CD20008B1704 /* Supporting Files */,
-			);
-			path = "RAFNetworking Tests";
-			sourceTree = "<group>";
-		};
-		846C56E81739CD20008B1704 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				846C57051739CD3D008B1704 /* Specta.xcodeproj */,
-				846C56F61739CD39008B1704 /* Expecta.xcodeproj */,
-				846C56E91739CD20008B1704 /* RAFNetworking Tests-Info.plist */,
-				846C56EA1739CD20008B1704 /* InfoPlist.strings */,
-				846C56F01739CD20008B1704 /* RAFNetworking Tests-Prefix.pch */,
-				846C57191739CD50008B1704 /* libSpecta.a */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		846C56F71739CD39008B1704 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				846C56FE1739CD39008B1704 /* libExpecta.a */,
-				846C57001739CD39008B1704 /* libExpecta-iOS.a */,
-				846C57021739CD39008B1704 /* ExpectaTests.octest */,
-				846C57041739CD39008B1704 /* Expecta-iOSTests.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		846C57061739CD3D008B1704 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				846C570D1739CD3D008B1704 /* libSpecta.a */,
-				846C570F1739CD3D008B1704 /* libSpecta-iOS.a */,
-				846C57111739CD3D008B1704 /* SpectaTests.octest */,
-				846C57131739CD3D008B1704 /* Specta-iOSTests.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		84EAA0AB1704E1E700E98BFE = {
 			isa = PBXGroup;
 			children = (
 				84EAA0BD1704E1E700E98BFE /* Reactive AFNetworking Example */,
-				846C56E71739CD20008B1704 /* RAFNetworking Tests */,
 				84EAA0B61704E1E700E98BFE /* Frameworks */,
 				84EAA0B51704E1E700E98BFE /* Products */,
 				7E1FD6724EAC45F6A4B0F196 /* Pods.xcconfig */,
@@ -293,9 +121,8 @@
 				84EAA0B91704E1E700E98BFE /* Foundation.framework */,
 				84EAA0BB1704E1E700E98BFE /* CoreGraphics.framework */,
 				846C56DF1739CD20008B1704 /* SenTestingKit.framework */,
-				846C56E11739CD20008B1704 /* Cocoa.framework */,
 				846C56E31739CD20008B1704 /* Other Frameworks */,
-				1B8D97D0BEB247D192E5E79A /* libPods.a */,
+				4630BBE009EA4F5A9B6FDEFE /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -308,7 +135,6 @@
 				84EAA16817056B3D00E98BFE /* RAFNMainViewController.h */,
 				84EAA16917056B3D00E98BFE /* RAFNMainViewController.m */,
 				84EAA12317054E2B00E98BFE /* ReactiveAFNetworking */,
-				84EAA13B1705571A00E98BFE /* AFNetworking */,
 				84EAA0BE1704E1E700E98BFE /* Supporting Files */,
 			);
 			path = "Reactive AFNetworking Example";
@@ -331,42 +157,13 @@
 		84EAA12317054E2B00E98BFE /* ReactiveAFNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				84EAA16C17056B4C00E98BFE /* AFHTTPClient+RACSupport.h */,
-				84EAA16D17056B4C00E98BFE /* AFHTTPClient+RACSupport.m */,
-				84EAA16E17056B4C00E98BFE /* AFURLConnectionOperation+RACSupport.h */,
-				84EAA16F17056B4C00E98BFE /* AFURLConnectionOperation+RACSupport.m */,
+				228D5B71181C8B8E00AE13AB /* AFNetworkReachabilityManager+RACSupport.h */,
+				228D5B72181C8B8E00AE13AB /* AFNetworkReachabilityManager+RACSupport.m */,
 				84EAA17017056B4C00E98BFE /* RACAFNetworking.h */,
 				84EAA17117056B4C00E98BFE /* RACSubscriber+AFProgressCallbacks.h */,
 				84EAA17217056B4C00E98BFE /* RACSubscriber+AFProgressCallbacks.m */,
 			);
 			path = ReactiveAFNetworking;
-			sourceTree = SOURCE_ROOT;
-		};
-		84EAA13B1705571A00E98BFE /* AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				84EAA17617056B5A00E98BFE /* AFHTTPClient.h */,
-				84EAA17717056B5A00E98BFE /* AFHTTPClient.m */,
-				84EAA17817056B5A00E98BFE /* AFHTTPRequestOperation.h */,
-				84EAA17917056B5A00E98BFE /* AFHTTPRequestOperation.m */,
-				84EAA17A17056B5A00E98BFE /* AFImageRequestOperation.h */,
-				84EAA17B17056B5A00E98BFE /* AFImageRequestOperation.m */,
-				84EAA17C17056B5A00E98BFE /* AFJSONRequestOperation.h */,
-				84EAA17D17056B5A00E98BFE /* AFJSONRequestOperation.m */,
-				84EAA17E17056B5A00E98BFE /* AFNetworkActivityIndicatorManager.h */,
-				84EAA17F17056B5A00E98BFE /* AFNetworkActivityIndicatorManager.m */,
-				84EAA18017056B5A00E98BFE /* AFNetworking.h */,
-				84EAA18117056B5A00E98BFE /* AFPropertyListRequestOperation.h */,
-				84EAA18217056B5A00E98BFE /* AFPropertyListRequestOperation.m */,
-				84EAA18317056B5A00E98BFE /* AFURLConnectionOperation.h */,
-				84EAA18417056B5A00E98BFE /* AFURLConnectionOperation.m */,
-				84EAA18517056B5A00E98BFE /* AFXMLRequestOperation.h */,
-				84EAA18617056B5A00E98BFE /* AFXMLRequestOperation.m */,
-				84EAA18717056B5A00E98BFE /* UIImageView+AFNetworking.h */,
-				84EAA18817056B5A00E98BFE /* UIImageView+AFNetworking.m */,
-			);
-			name = AFNetworking;
-			path = External/AFNetworking;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
@@ -384,8 +181,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				846C57151739CD46008B1704 /* PBXTargetDependency */,
-				846C57171739CD46008B1704 /* PBXTargetDependency */,
 			);
 			name = "RAFNetworking Tests";
 			productName = "RAFNetworking Tests";
@@ -431,16 +226,6 @@
 			mainGroup = 84EAA0AB1704E1E700E98BFE;
 			productRefGroup = 84EAA0B51704E1E700E98BFE /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 846C56F71739CD39008B1704 /* Products */;
-					ProjectRef = 846C56F61739CD39008B1704 /* Expecta.xcodeproj */;
-				},
-				{
-					ProductGroup = 846C57061739CD3D008B1704 /* Products */;
-					ProjectRef = 846C57051739CD3D008B1704 /* Specta.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				84EAA0B31704E1E700E98BFE /* Reactive AFNetworking Example */,
@@ -449,71 +234,11 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		846C56FE1739CD39008B1704 /* libExpecta.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libExpecta.a;
-			remoteRef = 846C56FD1739CD39008B1704 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		846C57001739CD39008B1704 /* libExpecta-iOS.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libExpecta-iOS.a";
-			remoteRef = 846C56FF1739CD39008B1704 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		846C57021739CD39008B1704 /* ExpectaTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ExpectaTests.octest;
-			remoteRef = 846C57011739CD39008B1704 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		846C57041739CD39008B1704 /* Expecta-iOSTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Expecta-iOSTests.octest";
-			remoteRef = 846C57031739CD39008B1704 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		846C570D1739CD3D008B1704 /* libSpecta.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSpecta.a;
-			remoteRef = 846C570C1739CD3D008B1704 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		846C570F1739CD3D008B1704 /* libSpecta-iOS.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libSpecta-iOS.a";
-			remoteRef = 846C570E1739CD3D008B1704 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		846C57111739CD3D008B1704 /* SpectaTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SpectaTests.octest;
-			remoteRef = 846C57101739CD3D008B1704 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		846C57131739CD3D008B1704 /* Specta-iOSTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Specta-iOSTests.octest";
-			remoteRef = 846C57121739CD3D008B1704 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		846C56DB1739CD20008B1704 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				846C56EC1739CD20008B1704 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,19 +306,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				846C57201739D043008B1704 /* AFHTTPClient.m in Sources */,
-				846C57211739D043008B1704 /* AFHTTPRequestOperation.m in Sources */,
-				846C57221739D043008B1704 /* AFImageRequestOperation.m in Sources */,
-				846C57231739D043008B1704 /* AFJSONRequestOperation.m in Sources */,
-				846C57241739D043008B1704 /* AFNetworkActivityIndicatorManager.m in Sources */,
-				846C57251739D043008B1704 /* AFPropertyListRequestOperation.m in Sources */,
-				846C57261739D043008B1704 /* AFURLConnectionOperation.m in Sources */,
-				846C57271739D043008B1704 /* AFXMLRequestOperation.m in Sources */,
-				846C57281739D043008B1704 /* UIImageView+AFNetworking.m in Sources */,
-				846C571B1739CD5B008B1704 /* AFHTTPClient+RACSupport.m in Sources */,
-				846C571C1739CD5B008B1704 /* AFURLConnectionOperation+RACSupport.m in Sources */,
-				846C571F1739CDD0008B1704 /* RAFHTTPClientSpec.m in Sources */,
-				847D6A131752D625004E09C2 /* AFHTTPClient+RAFMocking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,39 +313,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				228D5B73181C8B8E00AE13AB /* AFNetworkReachabilityManager+RACSupport.m in Sources */,
 				84EAA0C41704E1E700E98BFE /* main.m in Sources */,
 				84EAA16A17056B3D00E98BFE /* RAFNAppDelegate.m in Sources */,
 				84EAA16B17056B3D00E98BFE /* RAFNMainViewController.m in Sources */,
-				84EAA17317056B4C00E98BFE /* AFHTTPClient+RACSupport.m in Sources */,
-				84EAA17417056B4C00E98BFE /* AFURLConnectionOperation+RACSupport.m in Sources */,
 				84EAA17517056B4C00E98BFE /* RACSubscriber+AFProgressCallbacks.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		846C57151739CD46008B1704 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Specta;
-			targetProxy = 846C57141739CD46008B1704 /* PBXContainerItemProxy */;
-		};
-		846C57171739CD46008B1704 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Expecta;
-			targetProxy = 846C57161739CD46008B1704 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		846C56EA1739CD20008B1704 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				846C56EB1739CD20008B1704 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		84EAA0C01704E1E700E98BFE /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -757,6 +447,7 @@
 				INFOPLIST_FILE = "Reactive AFNetworking Example/Reactive AFNetworking Example-Info.plist";
 				OTHER_CFLAGS = "-all_load";
 				OTHER_LDFLAGS = (
+					"$(inherited)",
 					"-ObjC",
 					"-all_load",
 				);
@@ -778,6 +469,7 @@
 					"-all_load",
 				);
 				OTHER_LDFLAGS = (
+					"$(inherited)",
 					"-ObjC",
 					"-all_load",
 				);

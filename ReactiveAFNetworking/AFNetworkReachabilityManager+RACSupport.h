@@ -29,6 +29,8 @@
  * }];
  */
 - (RACSignal *)networkReachabilityStatusSignal;
+
+- (RACSignal *)reachableSignal;
 #endif
 
 @end

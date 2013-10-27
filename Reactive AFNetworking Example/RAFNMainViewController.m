@@ -18,7 +18,7 @@
 @property (nonatomic, strong) UITextView *statusTextView;
 @property (nonatomic, strong) UIImageView *afLogoImageView;
 @property (nonatomic, strong) UIButton *startTestingButton;
-@property (nonatomic, strong) AFHTTPClient *httpClient;
+//@property (nonatomic, strong) AFHTTPClient *httpClient;
 @property (nonatomic, assign) BOOL isTesting;
 
 @property (nonatomic, strong) RACDisposable *currentDisposable;
@@ -44,10 +44,11 @@
     CGRect slice, remainder;
     CGRectDivide(self.view.bounds, &slice, &remainder, 44, CGRectMaxYEdge);
 
-    self.statusTextView = [[UITextView alloc]initWithFrame:remainder];
+    self.statusTextView = [[UITextView alloc]initWithFrame:CGRectOffset(remainder, 0, CGRectGetHeight(UIScreen.mainScreen.bounds))];
     self.statusTextView.editable = NO;
     self.statusTextView.font = [UIFont fontWithName:@"Helvetica" size:20.0f];
     [self.statusTextView setTextAlignment:NSTextAlignmentCenter];
+    [self.statusTextView setText:@"what!!!!"];
     [self.statusTextView rac_liftSelector:@selector(setText:) withSignals:self.statusSignal, nil];
     
     self.afLogoImageView = [[UIImageView alloc]initWithFrame:CGRectOffset(remainder, 0, CGRectGetHeight(UIScreen.mainScreen.bounds))];
@@ -62,7 +63,7 @@
             [testingButton setFrame:(self.isTesting ? slice : self.view.bounds)];
         }];
         if (self.isTesting) {
-            [self testImageFetch];
+            //[self testImageFetch];
         } else {
             [self cancelTheShow];
             
@@ -74,13 +75,14 @@
     [self.view addSubview:self.startTestingButton];
     
     //Get network status
-    self.httpClient = [[AFHTTPClient alloc]initWithBaseURL:[NSURL URLWithString:@"https://www.google.com"]];
-    
-    [self.httpClient.networkReachabilityStatusSignal subscribeNext:^(NSNumber *status) {
+    AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
+
+    [manager.networkReachabilityStatusSignal subscribeNext:^(NSNumber *status) {
         AFNetworkReachabilityStatus networkStatus = [status intValue];
         switch (networkStatus) {
             case AFNetworkReachabilityStatusUnknown:
             case AFNetworkReachabilityStatusNotReachable:
+                NSLog(@"Cannot reach host");
                 [self.statusSignal sendNext:@"Cannot Reach Host"];
                 [self cancelTheShow];
                 break;
@@ -88,12 +90,20 @@
             case AFNetworkReachabilityStatusReachableViaWiFi:
                 break;
         }
-        
     }];
-    
+
+    //Simpler way to check reachability in AFNetworking 2.0
+    [manager.reachableSignal subscribeNext:^(NSNumber* reachable) {
+        if (reachable) {
+            NSLog(@"reachableSignal gave YES");
+        } else {
+            NSLog(@"reachableSignal gave NO");
+        }
+    }];
+
     [super viewDidLoad];
 }
-
+/*
 - (void)testImageFetch {
     //Fetch the image.  WHen fetched, animate the logo image up, then down and start the next test.
     [self.statusSignal sendNext:@"Fetching AFNetworking Logo..."];
@@ -176,7 +186,7 @@
         [self performSelector:@selector(finish) withObject:nil afterDelay:0.5];
     }];
 }
-
+*/
 - (void)finish {
     [self.statusSignal sendNext:@"Finished!"];
     [self.startTestingButton setTitle:@"Restart Tests" forState:UIControlStateNormal];
