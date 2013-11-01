@@ -10,6 +10,7 @@
 #define Reactive_AFNetworking_Example_RACAFNetworking_h
 
 #import "AFNetworkReachabilityManager+RACSupport.h"
+#import "AFHTTPSessionManager+RACSupport.h"
 //#import "AFURLConnectionOperation+RACSupport.h"
 
 #endif
