@@ -14,7 +14,7 @@ NSString * const RAFNetworkingOperationErrorKey = @"AFHTTPRequestOperation";
             [subscriber sendNext:RACTuplePack(task, response)];
             [subscriber sendCompleted];
         } failure:^(NSURLSessionDataTask *task , NSError *error) {
-            [subscriber sendError:RACTuplePack(task, error)];
+            [subscriber sendError:error];
         }];
         
         [task start];
@@ -27,7 +27,6 @@ NSString * const RAFNetworkingOperationErrorKey = @"AFHTTPRequestOperation";
     return [signal replayLazily];
 }
 
-
 - (RACSignal *)rac_HEAD:(NSString *)URLString parameters:(NSDictionary *)parameters {
     RACReplaySubject *subject = [RACReplaySubject replaySubjectWithCapacity:1];
     
@@ -38,7 +37,7 @@ NSString * const RAFNetworkingOperationErrorKey = @"AFHTTPRequestOperation";
             [subscriber sendNext:task];
             [subscriber sendCompleted];
         } failure:^(NSURLSessionDataTask *task , NSError *error) {
-            [subscriber sendError:RACTuplePack(task, error)];
+            [subscriber sendError:error];
         }];
         
         [task start];
@@ -61,7 +60,7 @@ NSString * const RAFNetworkingOperationErrorKey = @"AFHTTPRequestOperation";
             [subscriber sendNext:RACTuplePack(task, response)];
             [subscriber sendCompleted];
         } failure:^(NSURLSessionDataTask *task , NSError *error) {
-            [subscriber sendError:RACTuplePack(task, error)];
+            [subscriber sendError:error];
         }];
         
         [task start];
@@ -85,7 +84,7 @@ NSString * const RAFNetworkingOperationErrorKey = @"AFHTTPRequestOperation";
             [subscriber sendNext:RACTuplePack(task, response)];
             [subscriber sendCompleted];
         } failure:^(NSURLSessionDataTask *task , NSError *error) {
-            [subscriber sendError:RACTuplePack(task, error)];
+            [subscriber sendError:error];
         }];
         
         [task start];
@@ -108,7 +107,7 @@ NSString * const RAFNetworkingOperationErrorKey = @"AFHTTPRequestOperation";
             [subscriber sendNext:RACTuplePack(task, response)];
             [subscriber sendCompleted];
         } failure:^(NSURLSessionDataTask *task , NSError *error) {
-            [subscriber sendError:RACTuplePack(task, error)];
+            [subscriber sendError:error];
         }];
         
         [task start];
@@ -131,7 +130,7 @@ NSString * const RAFNetworkingOperationErrorKey = @"AFHTTPRequestOperation";
             [subscriber sendNext:RACTuplePack(task, response)];
             [subscriber sendCompleted];
         } failure:^(NSURLSessionDataTask *task , NSError *error) {
-            [subscriber sendError:RACTuplePack(task, error)];
+            [subscriber sendError:error];
         }];
         
         [task start];
