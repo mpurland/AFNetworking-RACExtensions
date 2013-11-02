@@ -12,7 +12,9 @@ NSString * const RAFNetworkingOperationErrorKey = @"AFHTTPRequestOperation";
             [subscriber sendNext:RACTuplePack(task, response)];
             [subscriber sendCompleted];
         } failure:^(NSURLSessionDataTask *task , NSError *error) {
-            [subscriber sendError:error];
+            NSMutableDictionary *userInfo = [error.userInfo mutableCopy] ?: [NSMutableDictionary dictionary];
+            userInfo[RAFNetworkingTaskErrorKey] = task;
+            [subscriber sendError:[NSError errorWithDomain:error.domain code:error.code userInfo:userInfo]];
         }];
 
         return [RACDisposable disposableWithBlock:^{
@@ -31,7 +33,9 @@ NSString * const RAFNetworkingOperationErrorKey = @"AFHTTPRequestOperation";
             [subscriber sendNext:task];
             [subscriber sendCompleted];
         } failure:^(NSURLSessionDataTask *task , NSError *error) {
-            [subscriber sendError:error];
+            NSMutableDictionary *userInfo = [error.userInfo mutableCopy] ?: [NSMutableDictionary dictionary];
+            userInfo[RAFNetworkingTaskErrorKey] = task;
+            [subscriber sendError:[NSError errorWithDomain:error.domain code:error.code userInfo:userInfo]];
         }];
 
         return [RACDisposable disposableWithBlock:^{
@@ -50,7 +54,9 @@ NSString * const RAFNetworkingOperationErrorKey = @"AFHTTPRequestOperation";
             [subscriber sendNext:RACTuplePack(task, response)];
             [subscriber sendCompleted];
         } failure:^(NSURLSessionDataTask *task , NSError *error) {
-            [subscriber sendError:error];
+            NSMutableDictionary *userInfo = [error.userInfo mutableCopy] ?: [NSMutableDictionary dictionary];
+            userInfo[RAFNetworkingTaskErrorKey] = task;
+            [subscriber sendError:[NSError errorWithDomain:error.domain code:error.code userInfo:userInfo]];
         }];
 
         return [RACDisposable disposableWithBlock:^{
@@ -70,7 +76,9 @@ NSString * const RAFNetworkingOperationErrorKey = @"AFHTTPRequestOperation";
             [subscriber sendNext:RACTuplePack(task, response)];
             [subscriber sendCompleted];
         } failure:^(NSURLSessionDataTask *task , NSError *error) {
-            [subscriber sendError:error];
+            NSMutableDictionary *userInfo = [error.userInfo mutableCopy] ?: [NSMutableDictionary dictionary];
+            userInfo[RAFNetworkingTaskErrorKey] = task;
+            [subscriber sendError:[NSError errorWithDomain:error.domain code:error.code userInfo:userInfo]];
         }];
 
         return [RACDisposable disposableWithBlock:^{
@@ -89,7 +97,9 @@ NSString * const RAFNetworkingOperationErrorKey = @"AFHTTPRequestOperation";
             [subscriber sendNext:RACTuplePack(task, response)];
             [subscriber sendCompleted];
         } failure:^(NSURLSessionDataTask *task , NSError *error) {
-            [subscriber sendError:error];
+            NSMutableDictionary *userInfo = [error.userInfo mutableCopy] ?: [NSMutableDictionary dictionary];
+            userInfo[RAFNetworkingTaskErrorKey] = task;
+            [subscriber sendError:[NSError errorWithDomain:error.domain code:error.code userInfo:userInfo]];
         }];
 
         return [RACDisposable disposableWithBlock:^{
@@ -108,7 +118,30 @@ NSString * const RAFNetworkingOperationErrorKey = @"AFHTTPRequestOperation";
             [subscriber sendNext:RACTuplePack(task, response)];
             [subscriber sendCompleted];
         } failure:^(NSURLSessionDataTask *task , NSError *error) {
-            [subscriber sendError:error];
+            NSMutableDictionary *userInfo = [error.userInfo mutableCopy] ?: [NSMutableDictionary dictionary];
+            userInfo[RAFNetworkingTaskErrorKey] = task;
+            [subscriber sendError:[NSError errorWithDomain:error.domain code:error.code userInfo:userInfo]];
+        }];
+
+        return [RACDisposable disposableWithBlock:^{
+            [task cancel];
+        }];
+    }];
+    
+    return [signal replayLazily];
+}
+
+- (RACSignal *)rac_DELETE:(NSString *)URLString parameters:(NSDictionary *)parameters {
+    RACSignal *signal = [RACSignal createSignal:^(id<RACSubscriber> subscriber) {
+        NSURLSessionDataTask *task = [self DELETE:URLString
+                                     parameters:parameters
+                                        success:^(NSURLSessionDataTask *task, id response) {
+            [subscriber sendNext:RACTuplePack(task, response)];
+            [subscriber sendCompleted];
+        } failure:^(NSURLSessionDataTask *task , NSError *error) {
+            NSMutableDictionary *userInfo = [error.userInfo mutableCopy] ?: [NSMutableDictionary dictionary];
+            userInfo[RAFNetworkingTaskErrorKey] = task;
+            [subscriber sendError:[NSError errorWithDomain:error.domain code:error.code userInfo:userInfo]];
         }];
 
         return [RACDisposable disposableWithBlock:^{
