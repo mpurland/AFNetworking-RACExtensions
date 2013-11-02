@@ -1,6 +1,6 @@
 #import "AFHTTPSessionManager+RACSupport.h"
 
-NSString * const RAFNetworkingOperationErrorKey = @"AFHTTPRequestOperation";
+NSString * const RAFNetworkingTaskErrorKey = @"NSURLSessionDataTask";
 
 @implementation AFHTTPSessionManager (RACSupport)
 
