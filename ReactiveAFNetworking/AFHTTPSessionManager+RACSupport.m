@@ -5,8 +5,6 @@ NSString * const RAFNetworkingOperationErrorKey = @"AFHTTPRequestOperation";
 @implementation AFHTTPSessionManager (RACSupport)
 
 - (RACSignal *)rac_GET:(NSString *)URLString parameters:(NSDictionary *)parameters {
-    RACReplaySubject *subject = [RACReplaySubject replaySubjectWithCapacity:1];
-    
     RACSignal *signal = [RACSignal createSignal:^(id<RACSubscriber> subscriber) {
         NSURLSessionDataTask *task = [self GET:URLString
                                      parameters:parameters
@@ -26,8 +24,6 @@ NSString * const RAFNetworkingOperationErrorKey = @"AFHTTPRequestOperation";
 }
 
 - (RACSignal *)rac_HEAD:(NSString *)URLString parameters:(NSDictionary *)parameters {
-    RACReplaySubject *subject = [RACReplaySubject replaySubjectWithCapacity:1];
-    
     RACSignal *signal = [RACSignal createSignal:^(id<RACSubscriber> subscriber) {
         NSURLSessionDataTask *task = [self HEAD:URLString
                                      parameters:parameters
@@ -47,8 +43,6 @@ NSString * const RAFNetworkingOperationErrorKey = @"AFHTTPRequestOperation";
 }
 
 - (RACSignal *)rac_PATCH:(NSString *)URLString parameters:(NSDictionary *)parameters {
-    RACReplaySubject *subject = [RACReplaySubject replaySubjectWithCapacity:1];
-    
     RACSignal *signal = [RACSignal createSignal:^(id<RACSubscriber> subscriber) {
         NSURLSessionDataTask *task = [self PATCH:URLString
                                      parameters:parameters
@@ -68,8 +62,6 @@ NSString * const RAFNetworkingOperationErrorKey = @"AFHTTPRequestOperation";
 }
 
 - (RACSignal *)rac_POST:(NSString *)URLString parameters:(NSDictionary *)parameters constructingBodyWithBlock:(void ( ^ ) ( id<AFMultipartFormData> formData ))block {
-    RACReplaySubject *subject = [RACReplaySubject replaySubjectWithCapacity:1];
-    
     RACSignal *signal = [RACSignal createSignal:^(id<RACSubscriber> subscriber) {
         NSURLSessionDataTask *task = [self POST:URLString
                                      parameters:parameters
@@ -90,8 +82,6 @@ NSString * const RAFNetworkingOperationErrorKey = @"AFHTTPRequestOperation";
 }
 
 - (RACSignal *)rac_POST:(NSString *)URLString parameters:(NSDictionary *)parameters {
-    RACReplaySubject *subject = [RACReplaySubject replaySubjectWithCapacity:1];
-    
     RACSignal *signal = [RACSignal createSignal:^(id<RACSubscriber> subscriber) {
         NSURLSessionDataTask *task = [self POST:URLString
                                      parameters:parameters
@@ -111,8 +101,6 @@ NSString * const RAFNetworkingOperationErrorKey = @"AFHTTPRequestOperation";
 }
 
 - (RACSignal *)rac_PUT:(NSString *)URLString parameters:(NSDictionary *)parameters {
-    RACReplaySubject *subject = [RACReplaySubject replaySubjectWithCapacity:1];
-    
     RACSignal *signal = [RACSignal createSignal:^(id<RACSubscriber> subscriber) {
         NSURLSessionDataTask *task = [self PUT:URLString
                                      parameters:parameters
