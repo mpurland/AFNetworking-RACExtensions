@@ -2,7 +2,7 @@
 
 NSString * const RAFNetworkingOperationErrorKey = @"AFHTTPRequestOperation";
 
-@implementation AFHTTPClient (RACSupport)
+@implementation AFHTTPSessionManager (RACSupport)
 
 - (RACSignal *)rac_GET:(NSString *)URLString parameters:(NSDictionary *)parameters {
     RACReplaySubject *subject = [RACReplaySubject replaySubjectWithCapacity:1];
@@ -16,8 +16,6 @@ NSString * const RAFNetworkingOperationErrorKey = @"AFHTTPRequestOperation";
         } failure:^(NSURLSessionDataTask *task , NSError *error) {
             [subscriber sendError:error];
         }];
-        
-        [task start];
 
         return [RACDisposable disposableWithBlock:^{
             [task cancel];
@@ -39,8 +37,6 @@ NSString * const RAFNetworkingOperationErrorKey = @"AFHTTPRequestOperation";
         } failure:^(NSURLSessionDataTask *task , NSError *error) {
             [subscriber sendError:error];
         }];
-        
-        [task start];
 
         return [RACDisposable disposableWithBlock:^{
             [task cancel];
@@ -62,8 +58,6 @@ NSString * const RAFNetworkingOperationErrorKey = @"AFHTTPRequestOperation";
         } failure:^(NSURLSessionDataTask *task , NSError *error) {
             [subscriber sendError:error];
         }];
-        
-        [task start];
 
         return [RACDisposable disposableWithBlock:^{
             [task cancel];
@@ -86,8 +80,6 @@ NSString * const RAFNetworkingOperationErrorKey = @"AFHTTPRequestOperation";
         } failure:^(NSURLSessionDataTask *task , NSError *error) {
             [subscriber sendError:error];
         }];
-        
-        [task start];
 
         return [RACDisposable disposableWithBlock:^{
             [task cancel];
@@ -109,8 +101,6 @@ NSString * const RAFNetworkingOperationErrorKey = @"AFHTTPRequestOperation";
         } failure:^(NSURLSessionDataTask *task , NSError *error) {
             [subscriber sendError:error];
         }];
-        
-        [task start];
 
         return [RACDisposable disposableWithBlock:^{
             [task cancel];
@@ -132,8 +122,6 @@ NSString * const RAFNetworkingOperationErrorKey = @"AFHTTPRequestOperation";
         } failure:^(NSURLSessionDataTask *task , NSError *error) {
             [subscriber sendError:error];
         }];
-        
-        [task start];
 
         return [RACDisposable disposableWithBlock:^{
             [task cancel];
