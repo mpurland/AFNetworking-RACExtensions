@@ -4,7 +4,7 @@
 /*!
  * User info key for accessing the AFHTTPRequestOperation on which the error occured.
  */
-extern NSString * const RAFNetworkingOperationErrorKey;
+extern NSString * const RAFNetworkingTaskErrorKey;
 
 @interface AFHTTPSessionManager (RACSupport)
 
